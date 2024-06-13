@@ -1,0 +1,33 @@
+{
+  "name": "employee-project",
+  "version": "1.0.0",
+  "description": "This is a employee project with using webpack, babel, webpack-dev-server and ES6 Modules",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "This is a test",
+    "start": "webpack-dev-server --output-public-path=/bundles/ --mode development --open --hot",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack --progress"
+  },
+  "keywords": [
+    "employee",
+    "project"
+  ],
+  "author": "Husniddin Ramazanov",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.24.7",
+    "babel-loader": "^8.3.0",
+    "cross-env": "^7.0.3",
+    "terser-webpack-plugin": "^5.3.7",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
